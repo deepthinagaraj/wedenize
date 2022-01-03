@@ -1,0 +1,2 @@
+# wedenize
+website for blind
