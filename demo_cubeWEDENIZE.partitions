@@ -1,0 +1,205 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="98114c74-4160-4b87-8e79-4ec2ae15c476" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>demo_viewWEDENIZE</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Sales Order Detail</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a9b5c123-ce2e-4e72-a9cf-61891a8178fe">
+          <ID>Sales Order Detail</ID>
+          <Name>Sales Order Detail</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9197c337-e193-4a30-81d8-2c3591428fad">
+            <DataSourceViewID>demo_viewWEDENIZE</DataSourceViewID>
+            <TableID>Sales_SalesOrderDetail</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>AW Build Version</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1aa990e5-3833-47ca-878c-8c22ee5f5d71">
+          <ID>AW Build Version</ID>
+          <Name>AW Build Version</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5e4d39b1-71e4-4d2b-a4e6-8f561f148060">
+            <DataSourceViewID>demo_viewWEDENIZE</DataSourceViewID>
+            <TableID>dbo_AWBuildVersion</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Special Offer Product</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="52e81221-a412-4b63-be4c-e1f2290264bf">
+          <ID>Special Offer Product</ID>
+          <Name>Special Offer Product</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e5f2edad-6cd2-4871-bb11-f41681ba10fa">
+            <DataSourceViewID>demo_viewWEDENIZE</DataSourceViewID>
+            <TableID>Sales_SpecialOfferProduct</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Order Header</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="46c1cb4c-ae45-48dd-954b-603fae8bd308">
+          <ID>Sales Order Header</ID>
+          <Name>Sales Order Header</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6c20b671-a2a2-414a-a5a9-98c5591f9c4a">
+            <DataSourceViewID>demo_viewWEDENIZE</DataSourceViewID>
+            <TableID>Sales_SalesOrderHeader</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Department</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="043396fc-72a9-42a1-8a2e-4245356e3eee">
+          <ID>Department</ID>
+          <Name>Department</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="260cad3d-cb5c-4a9f-9e32-994a5dfed714">
+            <DataSourceViewID>demo_viewWEDENIZE</DataSourceViewID>
+            <TableID>HumanResources_Department</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Employee Department History</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="84138c88-e7fb-40fb-a14c-89202c9eca73">
+          <ID>Employee Department History</ID>
+          <Name>Employee Department History</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="13dbff22-4376-49f6-bc28-dd1a4bfb75cb">
+            <DataSourceViewID>demo_viewWEDENIZE</DataSourceViewID>
+            <TableID>HumanResources_EmployeeDepartmentHistory</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Store</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7cbba2ac-c98b-41a1-bfee-8a57413dfa63">
+          <ID>Store</ID>
+          <Name>Store</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7b2d990b-9bb6-4b1b-944f-892fea7c05a3">
+            <DataSourceViewID>demo_viewWEDENIZE</DataSourceViewID>
+            <TableID>Sales_Store</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Person</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8f815dce-f049-4efd-ae46-dc46a31f47ce">
+          <ID>Sales Person</ID>
+          <Name>Sales Person</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e7ee5668-4e7c-4886-af5b-ed98a07732fa">
+            <DataSourceViewID>demo_viewWEDENIZE</DataSourceViewID>
+            <TableID>Sales_SalesPerson</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Business Entity</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b84c61e3-54a0-4d71-bf07-f4a044568131">
+          <ID>Business Entity</ID>
+          <Name>Business Entity</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="446714f3-5dcc-457b-8db2-2dac4b47b636">
+            <DataSourceViewID>demo_viewWEDENIZE</DataSourceViewID>
+            <TableID>Person_BusinessEntity</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Customer</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ff91d721-f8aa-462d-986b-0ce74c3ec87a">
+          <ID>Customer</ID>
+          <Name>Customer</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b45b18ad-6d2c-45f2-af83-c436e332ef84">
+            <DataSourceViewID>demo_viewWEDENIZE</DataSourceViewID>
+            <TableID>Sales_Customer</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

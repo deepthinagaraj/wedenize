@@ -1,0 +1,243 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>WEDENIZE_Datasource</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=LAPTOP-J8QVLUB2;Integrated Security=SSPI;Initial Catalog=WEDENIZE</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+      <DataSource>
+        <ID>WEDENIZE Datasource</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=LAPTOP-J8QVLUB2;Integrated Security=SSPI;Initial Catalog=WEDENIZE</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">deepthi nagaraj</Account>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Sales Order Header</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Special Offer Product</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Sales Order Detail</ID>
+      </Dimension>
+      <Dimension>
+        <ID>AW Build Version</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Customer</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Sales Person</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Department</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Business Entity</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Store</ID>
+      </Dimension>
+      <Dimension>
+        <ID>AW Build Version 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Special Offer Product 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Department 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Sales Person 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Business Entity 1</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>demo_viewWEDENIZE</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Sales Order Detail</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Order Detail</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>AW Build Version</ID>
+            <Partitions>
+              <Partition>
+                <ID>AW Build Version</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Special Offer Product</ID>
+            <Partitions>
+              <Partition>
+                <ID>Special Offer Product</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Sales Order Header</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Order Header</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Department</ID>
+            <Partitions>
+              <Partition>
+                <ID>Department</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Employee Department History</ID>
+            <Partitions>
+              <Partition>
+                <ID>Employee Department History</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Store</ID>
+            <Partitions>
+              <Partition>
+                <ID>Store</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Sales Person</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Person</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Business Entity</ID>
+            <Partitions>
+              <Partition>
+                <ID>Business Entity</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Customer</ID>
+            <Partitions>
+              <Partition>
+                <ID>Customer</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>demo_WEDENIZE_CUBE</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>AW Build Version</ID>
+            <Partitions>
+              <Partition>
+                <ID>AW Build Version</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Sales Order Detail</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Order Detail</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Special Offer Product</ID>
+            <Partitions>
+              <Partition>
+                <ID>Special Offer Product</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Sales Order Header</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Order Header</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Department</ID>
+            <Partitions>
+              <Partition>
+                <ID>Department</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Employee Department History</ID>
+            <Partitions>
+              <Partition>
+                <ID>Employee Department History</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Store</ID>
+            <Partitions>
+              <Partition>
+                <ID>Store</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Sales Person</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Person</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Business Entity</ID>
+            <Partitions>
+              <Partition>
+                <ID>Business Entity</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Customer</ID>
+            <Partitions>
+              <Partition>
+                <ID>Customer</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>
